@@ -1,0 +1,20 @@
+Link direto para o problema no Beecrowd: https://judge.beecrowd.com/en/problems/view/1021
+31/08
+__Introdução__
+
+    O problema consiste em desenvolver um sistema, que calcula a melhor possibilidade possivel
+para decompor valores de números decimais com a menor quantidade de cédulas e moedas possiveis.
+    As celulas disponiveis: 100, 50, 20, 10, 5, 2
+    As moedas disponiveis:  1, 0.50, 0.25, 0.10, 0.05 and 0.01.
+
+__Como foi feito?__
+
+    Eu comecei indo bem na estrutura do código, enquanto dava eu tentei fazer sem IA, na hora de
+tentar fazer a divisão dos valores pra dividir em cedulas e em moedas que fiquei confuso pedi AJUDA
+para o claude ele me guiou dizendo que deveria converter o valor para centavos usando Math.round 
+(Que eu não conhecia). Logo depois pensei em criar as duas funçoes staticas separadas do Main pois 
+ficaria mais organizado. Então fiz a funçao que encontrava quantas cedulas "cabiam" dentro daquele 
+valor, depois diminuiria as cedulas que foram usadas e entregava o resto do valor pra testar com os 
+centavos, que por sua vez completou oq faltava.
+
+
