@@ -4,9 +4,8 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] arg){
         Scanner sc= new Scanner(System.in);
-        int op=0;
 
-        while(op!=2){
+       
         System.out.println("Digite um valor: ");
         double price=sc.nextDouble();
 
@@ -23,30 +22,9 @@ public class Main{
                  
          System.out.println("Numero de moedas: ");  
          QuantMoeda(resto);
+    
 
-         //Coloquei este menu interativo pra facilitar o teste!
-          System.out.println("Escolha uma opção: ");
-           System.out.println("1- Testar com outro número. ");
-           System.out.println("2- Sair. ");
-        
-            op = sc.nextInt();
-         
-
-           switch(op){
-            case 1:
-                System.out.println("voltando...");
-                break;
-            case 2:
-                System.out.println("saindo...");
-                break;  
-
-               default:
-                System.out.println("Opção inválida!");
-           }
-
-     
-
-    }
+    
 }   
     }
 
