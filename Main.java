@@ -17,10 +17,10 @@ public class Main{
         long priceCents = Math.round(price*100);
         
         
-         System.out.println("Numero de cedulas: ");  
+         System.out.println("NOTAS: ");  
          long resto = QuantCed(priceCents);
                  
-         System.out.println("Numero de moedas: ");  
+         System.out.println("MOEDAS: ");  
          QuantMoeda(resto);
     
 
@@ -44,7 +44,7 @@ public class Main{
        // aqui ele atualiza o valor em centavos pra descontar na proxima volta do for
        priceCents=priceCents-(cedula[i]*qntNotas);
 
-       System.out.println("*"+qntNotas+"*" +" cedulas de: "+(cedula[i]/100) );
+       System.out.println("*"+qntNotas+"*" +" NOTA(S) DE R$ "+(cedula[i]/100) );
     
          }
             return priceCents;
@@ -68,7 +68,7 @@ public class Main{
         MoedaDouble[i] = Math.round(Moeda[i]);
 
         //dviide por 100 pra deixar no formato de centavos 0,01
-         System.out.println("*"+qntMoedas+"*"+ " Moedas de: "+MoedaDouble[i]/100);
+         System.out.println("*"+qntMoedas+"*"+ " MOEDA(S) DE R$ "+MoedaDouble[i]/100);
       
        }
          
